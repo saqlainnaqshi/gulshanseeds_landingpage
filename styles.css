@@ -1,0 +1,407 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4CAF50, #81C784);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.landing-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 20px;
+    position: relative;
+}
+
+.content {
+    max-width: 600px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+h1 span {
+    color: #FFEB3B;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.countdown {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.time-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+}
+
+.time-box span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    background: #FFEB3B;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+.subscribe-form button:hover {
+    background: #FFD54F;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.animation-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 50px;
+}
+
+.animated-boy {
+    width: 200px;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.leaf {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('./assets/leaf.png') no-repeat center/cover;
+    animation: floatLeaf 6s infinite ease-in-out;
+}
+
+.leaf-1 {
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.leaf-2 {
+    top: 20%;
+    left: 80%;
+    animation-delay: 2s;
+}
+
+.leaf-3 {
+    top: 50%;
+    left: 40%;
+    animation-delay: 4s;
+}
+
+@keyframes floatLeaf {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(10deg);
+    }
+}
+
+.seed-growth {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+@keyframes grow {
+
+    0%,
+    100% {
+        height: 0;
+    }
+
+    50% {
+        height: 50px;
+    }
+} */
+
+
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4CAF50, #81C784);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    max-width: 100%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h1 span {
+    color: #FFEB3B;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.countdown {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.time-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80px;
+}
+
+.time-box span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.animation-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.leaf {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('./assets/leaf.png') no-repeat center/cover;
+    animation: floatLeaf 6s infinite ease-in-out;
+}
+
+.leaf-1 {
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.leaf-2 {
+    top: 20%;
+    left: 80%;
+    animation-delay: 2s;
+}
+
+.leaf-3 {
+    top: 50%;
+    left: 40%;
+    animation-delay: 4s;
+}
+
+@keyframes floatLeaf {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(10deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .time-box {
+        width: 70px;
+        padding: 8px;
+    }
+
+    .time-box span {
+        font-size: 1.25rem;
+    }
+
+    .time-box p {
+        font-size: 0.8rem;
+    }
+
+    .animation-container {
+        height: 150px;
+    }
+
+    .leaf {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+    }
+
+    .description {
+        font-size: 0.8rem;
+    }
+
+    .time-box {
+        width: 60px;
+        padding: 6px;
+    }
+
+    .time-box span {
+        font-size: 1rem;
+    }
+
+    .time-box p {
+        font-size: 0.7rem;
+    }
+
+    .animation-container {
+        height: 120px;
+    }
+
+    .leaf {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+footer a {
+    color: #FFEB3B;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
